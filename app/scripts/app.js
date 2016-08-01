@@ -13,19 +13,17 @@ angular
     'ngAnimate',
     'ngResource',
     'ngRoute',
-    'ngTouch'
+    'ngTouch',
+    'mainPageRo',
+    'mainPageEn'
   ])
   .config(function ($routeProvider) {
     $routeProvider
       .when('/', {
-        templateUrl: 'views/main.html',
-        controller: 'MainCtrl',
-        controllerAs: 'main'
+        template: '<main-page-ro></main-page-ro>'
       })
-      .when('/about', {
-        templateUrl: 'views/about.html',
-        controller: 'AboutCtrl',
-        controllerAs: 'about'
+      .when('/en', {
+        template: '<main-page-en></main-page-en>'
       })
       .otherwise({
         redirectTo: '/'
