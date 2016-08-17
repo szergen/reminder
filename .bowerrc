@@ -1,4 +1,6 @@
  {
       "directory": "bower_components",
-      "json": "bower.json"
+      "json": "bower.json",
+      "proxy":"http://buc-net-proxy.ubisoft.org:3128",
+      "https-proxy":"http://buc-net-proxy.ubisoft.org:3128"
   }

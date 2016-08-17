@@ -17,6 +17,7 @@ body{
     background:$light-blue;
     color:white;
     font-family: $font-text;
+    
 }
 h1, h2, h3, h4, h5 {
     font-family: $font-headings;
@@ -24,4 +25,25 @@ h1, h2, h3, h4, h5 {
 }
 button {
     font-family: $font-headings;
+}
+.img-circle {
+    max-width: 170px;
+    border-radius: 50%;
+   
+}
+textarea {
+    resize:none;
+    height:200px; 
+    min-height:200px;  
+    max-height:200px;
+}
+.date-contact p {
+    font-size: 24px;
+    padding-left: 30px;
+}
+.date-contact span {
+    font-size: 30px;
+}
+.date-contact-social {
+    padding-top:30px;
 }
