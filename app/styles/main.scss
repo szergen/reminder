@@ -14,10 +14,9 @@ $normal-orange: #dea76d;
 
 //Main Styles
 body{ 
-    background:$light-blue;
+    background:$normal-blue;
     color:white;
     font-family: $font-text;
-    
 }
 h1, h2, h3, h4, h5 {
     font-family: $font-headings;
@@ -47,3 +46,43 @@ textarea {
 .date-contact-social {
     padding-top:30px;
 }
+//Basic Styles
+footer {
+    background-color: black;
+    text-align: center;
+    line-height: 100px;
+}
+#nav2 {
+    background: $light-blue;
+
+        ul {
+            margin: 0 auto;
+            text-align: center;
+
+            li{
+                float:none;
+                display: inline-block;
+                a {
+                    line-height: 50px;
+                    font-size: 20px;
+                    text-transform: uppercase;
+                    color:white;
+                    font-family: $font-text;
+                    border:0;
+                    padding:10px 20px;
+                }
+                a:hover {
+                    background:none;
+                    color:$normal-orange;
+                    border:0;
+                    margin-left:-27px;
+                   
+                }
+                a:hover:before {
+                    content:'';
+                    background:url(../images/arrow_small.png) no-repeat;
+                    padding-left:27px;
+                }
+            }
+        }
+    }
