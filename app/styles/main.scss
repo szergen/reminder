@@ -47,11 +47,17 @@ textarea {
     padding-top:30px;
 }
 //Basic Styles
+h3 {
+    font-size: 35px; 
+    line-height: 40px;
+    padding-bottom: 80px;
+}
 footer {
     background-color: black;
     text-align: center;
     line-height: 100px;
 }
+//2nd navigation
 #nav2 {
     background: $light-blue;
 
@@ -86,3 +92,17 @@ footer {
             }
         }
     }
+//left and right text for 3 columns sections
+.left-text, .right-text {
+    padding:100px 60px 30px;
+    p {
+        padding-bottom:30px;
+    }
+}
+.right-text {
+    text-align: right;
+}
+//left and right text for 4 columns sections
+.left-mid-text, .right-mid-text {
+    padding: 100px 30px 30px;
+}
