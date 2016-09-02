@@ -12,11 +12,73 @@ $normal-blue: #162336;
 $dark-blue: #0b121c;
 $normal-orange: #dea76d;
 
+//Baseline Styles
+html {
+    font-size: 100%;
+}
+h1, .alpha,
+h2, .beta,
+h3, .gamma,
+h4, .delta,
+h5, .epsilon,
+h6, .zeta {
+    font-weight: bold;
+    margin: 0;
+}
+h1, .alpha {
+    font-size: 3em;
+    line-height: 1;
+}
+h2, .beta {
+    font-size: 2.25em;
+    line-height: 1.3333333333333333;
+}
+h3, .gamma {
+    font-size: 1.5em;
+    line-height: 1;
+}
+h4, .delta {
+    font-size: 1.3125em;
+    line-height: 1.1428571428571428;
+}
+h5, .epsilon {
+    font-size: 1.125em;
+    line-height: 1.3333333333333333;
+}
+h6, .zeta {
+    font-size: 1em;
+    line-height: 1.5;
+}
+p,
+blockquote {
+    font-size: 16px;
+    margin: 0;
+    line-height: 1.5;
+    -webkit-hyphens: auto;
+       -moz-hyphens: auto;
+        -ms-hyphens: auto;
+            hyphens: auto;
+}
+dl,
+ol,
+ul {
+    font-size: 1em;
+    margin: 0;
+    padding: 0;
+}
+dd,
+dt,
+li {
+    line-height: 1.5;
+    margin: 0;
+}
+
 //Main Styles
 body{ 
     background:$normal-blue;
     color:white;
     font-family: $font-text;
+    padding-top:100px;
 }
 h1, h2, h3, h4, h5 {
     font-family: $font-headings;
@@ -57,6 +119,13 @@ footer {
     text-align: center;
     line-height: 100px;
 }
+.row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+}
 //2nd navigation
 #nav2 {
     background: $light-blue;
@@ -92,6 +161,9 @@ footer {
             }
         }
     }
+.nav-tabs {
+    border: none;
+}
 //left and right text for 3 columns sections
 .left-text, .right-text {
     padding:100px 60px 30px;
@@ -101,8 +173,85 @@ footer {
 }
 .right-text {
     text-align: right;
+    background:$dark-blue;
+}
+.mid-image {
+    background:$light-blue;
+}
+.left-text {
+    background:$normal-blue;
 }
 //left and right text for 4 columns sections
 .left-mid-text, .right-mid-text {
     padding: 100px 30px 30px;
+    p {
+        padding-bottom:30px;
+    }
+}
+.left-mid-text {
+    background:$light-blue;
+}
+.right-mid-text {
+    background:$normal-blue;
+    text-align: right;
+}
+.container-fluid {
+    position:relative;
+}
+//Section Headings
+.cat-title {
+    text-align: center;
+    width:370px;
+    margin:0 auto;
+    position:absolute;
+    z-index: 10;
+    left:0;
+    right:0;
+    top:-50px;
+    margin:0 auto;
+}
+h2 {
+    text-align: center;
+    background:#1f334f;
+    line-height: 100px;
+}
+.cat-title h2:before {
+    content:'';
+    background:url(../images/arrow_small.png) no-repeat center;
+    padding-left:27px;
+}
+//main "nav"
+.navbar-inverse {
+    background:black;
+    height:100px;
+    margin-bottom: 0;
+    .nav-logo a {
+        color:white;
+        span {
+            padding-left:40px;
+            font-size: 18px;
+        }
+        text-decoration: none;
+    }
+    .nav-logo a:hover {
+        color:$normal-orange;
+    }
+    .row {
+        align-items: center;
+    }
+    .nav-phone, .nav-mail, .nav-fb, .nav-lang {
+        line-height: 100px;
+        a {
+            padding:5px;
+            color:white;
+            text-decoration: none;
+        }
+        a:hover {
+            color:$normal-orange;
+             text-decoration: none;
+        } 
+    } 
+}
+.navbar-brand > img {
+    display: inline-block;
 }
