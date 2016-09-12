@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
   </head>
-  <body ng-app="reMinderApp">
+  <body ng-app="reMinderApp" data-spy="scroll" data-target="#myScrollSpy" data-offset="250">
     <!--[if lte IE 8]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
@@ -25,24 +25,24 @@
       <nav class="navbar navbar-inverse navbar-fixed-top">
           <div class="container">
             <div class="row">
-                <div class="col-md-5 nav-logo">
+                <div class="col-lg-5 col-md-9 nav-logo col-xs-9">
                     <a href="#">
-                        <img src="images/logo_small.png">
-                        <span class="motto">to be aware or not to be</span>
+                        <img src="images/logo_small.png" >
+                        <span class="motto hidden-xs">to be aware or not to be</span>
                     </a>  
                 </div><!-- end nav header -->
-                <div class="col-md-2 nav-phone">
+                <div class="col-lg-2 nav-phone visible-lg">
                     <img src="images/phone_icon_small.png">
                     <a href="tel:0744555123">0744 555 123</a>
                 </div>
-                <div class="col-md-3 nav-mail">
+                <div class="col-lg-3 nav-mail visible-lg">
                     <img src="images/mail_icon_small.png">
                     <a href="mailto:mail@reminder.ro" target="_top">mail@re-minder.ro</a>
                 </div>
-                <div class="col-md-1 nav-fb">
+                <div class="col-lg-1 nav-fb visible-lg">
                     <a href=""><img src="images/fb_logo_small.png"></a>
                 </div>
-                <div class="col-md-1 nav-lang">
+                <div class="col-lg-1 col-xs-3 col-md-3 nav-lang pull-right">
                     <a href="#/">RO</a>
                     <a href="#/en">EN</a>
                 </div>
@@ -51,7 +51,22 @@
       </nav> <!-- end nav -->
       
     <div ng-view=""></div>
-   
+   <div id="myScrollSpy">
+      <ul class="nav nav-pills nav-stacked sideNav">
+       <li><a href="#slider"><svg height="10" width="10">
+  <circle cx="5" cy="5" r="4" stroke="white" stroke-width="1" fill="none" />
+  Sorry, your browser does not support inline SVG.
+</svg></a></li>
+        <li><a href="#desprenoi"><svg height="10" width="10">
+  <circle cx="5" cy="5" r="4" stroke="white" stroke-width="1" fill="none" />
+  Sorry, your browser does not support inline SVG.
+</svg></a></li>
+          <li><a href="#one2one"><svg height="10" width="10">
+  <circle cx="5" cy="5" r="4" stroke="white" stroke-width="1" fill="none" />
+  Sorry, your browser does not support inline SVG.
+</svg></a></li>
+       </ul>
+      </div>
 
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
@@ -84,7 +99,6 @@
         <script src="scripts/main-page-en/main-page-en.module.js"></script>
         <script src="scripts/main-page-ro/main-page-ro.component.js"></script>
         <script src="scripts/main-page-en/main-page-en.component.js"></script>
-      
         <!-- endbuild -->
 </body>
 </html>
