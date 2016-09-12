@@ -25,7 +25,11 @@ angular.
             });
         $('.carousel').carousel({
           interval: 5000
-        })
+        });
+                var clickedMe = function() {
+                    alert("tralala");
+                }
+                
               
                 /*   
                 $http.get('phones/phones.json').then(function(response) {

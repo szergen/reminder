@@ -168,8 +168,11 @@ footer {
 .left-text, .right-text {
     padding:100px 60px 30px;
     p {
-        padding-bottom:30px;
+        max-height: 450px;
+        margin-bottom:30px;
+        overflow: hidden;
     }
+    
 }
 .right-text {
     text-align: right;
@@ -430,8 +433,72 @@ now override the 3.3 new styles for modern browsers & apply opacity
     top:50%;
     right:1%;
     z-index: 100;
+    text-align: right;
+    .nameSection {
+        visibility: hidden;
+    }
+    li.active span.nameSection {
+        visibility: visible;
+    }
+     .nav > li > a{
+        padding:5px;
+        line-height: 10px;
+         display: inline;
+    }
+    .nav > li > a:hover {
+        background:none;
+        background:$normal-orange;
+    }
+    
+    .nav > li:hover span.nameSection {
+        visibility: visible;
+    }
+    
     li.active a{
-        background-color:$normal-orange;
-        
-    }   
+        text-align: center;
+        background:$normal-orange; 
+    }
+}
+//background Images
+#desprenoi .mid-image {
+    background-image:url(../images/elena.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+#one2one .left-image{
+    background-image:url(../images/one2one_despremine.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+#one2one .right-image{
+    background-image:url(../images/one2one_despretine.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+#corporate .mid-image{
+    background-image:url(../images/corporate.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+#parenting .left-image{
+    background-image:url(../images/one2one_despremine.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+#parenting .right-image{
+    background-image:url(../images/one2one_despretine.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+//modals
+.modal-body {
+    color:black;
+    font-size:16px;
 }
