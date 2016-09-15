@@ -1,1 +1,1 @@
-angular.module('mainPageRo',[]);
+angular.module('mainPageRo',['smoothScroll']);

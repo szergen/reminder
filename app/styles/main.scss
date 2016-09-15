@@ -348,10 +348,19 @@ footer.end {
     background-position: center;
     padding-left:20px;
 }
+.btn-warning:visited {
+    background:none !important;
+}
 .btn-warning:hover {
     background:none;
     border-color:white; 
     box-shadow: 0px 0px 5px black;
+}
+.btn-warning:active {
+    background:none !important;
+}
+.btn-warning:focus {
+    background:none !important;
 }
 
 //carousel
@@ -445,14 +454,21 @@ now override the 3.3 new styles for modern browsers & apply opacity
         line-height: 10px;
          display: inline;
     }
+    
     .nav > li > a:hover {
         background:none;
         background:$normal-orange;
     }
+    .nav > li > a:focus {
+        background:none;
+        background:$normal-orange;
+    }
+    
     
     .nav > li:hover span.nameSection {
         visibility: visible;
     }
+    
     
     li.active a{
         text-align: center;

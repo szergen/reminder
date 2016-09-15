@@ -26,9 +26,9 @@
           <div class="container">
             <div class="row">
                 <div class="col-lg-5 col-md-9 nav-logo col-xs-9">
-                    <a href="#">
+                    <a href="#" scroll-to="slider" offset="100">
                         <img src="images/logo_small.png" >
-                        <span class="motto hidden-xs">to be aware or not to be</span>
+                        
                     </a>  
                 </div><!-- end nav header -->
                 <div class="col-lg-2 nav-phone visible-lg">
@@ -53,31 +53,31 @@
     <div ng-view=""></div>
    <div id="myScrollSpy">
       <ul class="nav nav-pills nav-stacked sideNav">
-       <li><span class="nameSection">Home</span> <a href="#slider"><svg height="10" width="10">
+       <li><span class="nameSection">Home</span> <a href="#slider" scroll-to="slider" offset="100"><svg height="10" width="10">
   <circle cx="5" cy="5" r="4" stroke="white" stroke-width="1" fill="none" />
   Sorry, your browser does not support inline SVG.
 </svg></a></li>
-          <li><span class="nameSection">Despre noi</span> <a href="#desprenoi"><svg height="10" width="10">
+          <li><span class="nameSection">Despre noi</span> <a href="#desprenoi" scroll-to="desprenoi" offset="160"><svg height="10" width="10">
   <circle cx="5" cy="5" r="4" stroke="white" stroke-width="1" fill="none" />
   Sorry, your browser does not support inline SVG.
 </svg></a></li>
-          <li><span class="nameSection">One 2 One</span> <a href="#one2one"><svg height="10" width="10">
+          <li><span class="nameSection">One 2 One</span> <a href="#one2one" scroll-to="one2one" offset="140"><svg height="10" width="10">
   <circle cx="5" cy="5" r="4" stroke="white" stroke-width="1" fill="none" />
   Sorry, your browser does not support inline SVG.
 </svg></a></li>
-          <li><span class="nameSection">Corporate</span> <a href="#corporate"><svg height="10" width="10">
+          <li><span class="nameSection">Corporate</span> <a href="#corporate" scroll-to="corporate" offset="140"><svg height="10" width="10">
   <circle cx="5" cy="5" r="4" stroke="white" stroke-width="1" fill="none" />
   Sorry, your browser does not support inline SVG.
 </svg></a></li>
-          <li><span class="nameSection">Parenting</span> <a href="#parenting"><svg height="10" width="10">
+          <li><span class="nameSection">Parenting</span> <a href="#parenting" scroll-to="parenting" offset="140"><svg height="10" width="10">
   <circle cx="5" cy="5" r="4" stroke="white" stroke-width="1" fill="none" />
   Sorry, your browser does not support inline SVG.
 </svg></a></li>
-          <li><span class="nameSection">Testimonials</span> <a href="#testimonials"><svg height="10" width="10">
+          <li><span class="nameSection">Testimonials</span> <a href="#testimonials" scroll-to="testimonials" offset="100"><svg height="10" width="10">
   <circle cx="5" cy="5" r="4" stroke="white" stroke-width="1" fill="none" />
   Sorry, your browser does not support inline SVG.
 </svg></a></li>
-          <li><span class="nameSection">Contact</span> <a href="#contact"><svg height="10" width="10">
+          <li><span class="nameSection">Contact</span> <a href="#contact" scroll-to="contact" offset="100"><svg height="10" width="10">
   <circle cx="5" cy="5" r="4" stroke="white" stroke-width="1" fill="none" />
   Sorry, your browser does not support inline SVG.
 </svg></a></li>
@@ -106,6 +106,7 @@
     <script src="bower_components/angular-route/angular-route.js"></script>
     <script src="bower_components/angular-touch/angular-touch.js"></script>
     <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+    <script src="bower_components/ngSmoothScroll/lib/angular-smooth-scroll.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
