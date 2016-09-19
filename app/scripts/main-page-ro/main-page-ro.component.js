@@ -7,6 +7,7 @@ angular.
                 var self = this;
                 self.test = "traklalalalala";
                 var wheight = $(window).height()-100;
+                var wwidth = $(window).width();
                 
         $('.fullHeight').css('height', wheight);
         console.log("slider ba");
@@ -26,6 +27,29 @@ angular.
         $('.carousel').carousel({
           interval: 5000
         });
+                //mouse Coordinates
+                $( document ).on( "mousemove", function( event ) {
+                    if(event.pageX<wwidth/2) {
+                        console.log("activeaza-te ba");
+                        $('#nav2 ul li:first-child a').addClass('activeHover');
+                        $('#nav2 ul li:last-child a').removeClass('activeHover');
+                    }
+                    else {
+                        $('#nav2 ul li:last-child a').addClass('activeHover');
+                        $('#nav2 ul li:first-child a').removeClass('activeHover');
+                    }
+                });
+                //affix activation 
+                $('#nav2').affix({
+                  offset: {
+                    top: wheight+50,
+                    bottom: function () {
+                      return (this.bottom = $('.footer').outerHeight(true))
+                    }
+                  }
+                });
+                
+                //test function
                 var clickedMe = function() {
                     alert("tralala");
                 }

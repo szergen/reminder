@@ -144,7 +144,8 @@ footer {
                     color:white;
                     font-family: $font-text;
                     border:0;
-                    padding:10px 20px;
+                    padding:10px 40px;
+                    margin-left:-27px;
                 }
                 a:hover {
                     background:none;
@@ -153,14 +154,21 @@ footer {
                     margin-left:-27px;
                    
                 }
-                a:hover:before {
-                    content:'';
-                    background:url(../images/arrow_small.png) no-repeat;
-                    padding-left:27px;
-                }
             }
         }
     }
+.activeHover:before {
+    content:'';
+    background:url(../images/arrow_small.png) no-repeat;
+    padding-left:27px;
+    margin-left:-27px;
+}
+#nav2 ul li.activeHover a{
+                    background:none;
+                    color:$normal-orange;
+                    border:0;
+                    margin-left:-27px;
+}
 .nav-tabs {
     border: none;
 }
@@ -445,6 +453,9 @@ now override the 3.3 new styles for modern browsers & apply opacity
     text-align: right;
     .nameSection {
         visibility: hidden;
+        background:$dark-blue;
+        padding:5px;
+        border-radius: 5px;
     }
     li.active span.nameSection {
         visibility: visible;
@@ -455,12 +466,10 @@ now override the 3.3 new styles for modern browsers & apply opacity
          display: inline;
     }
     
-    .nav > li > a:hover {
-        background:none;
+    .nav > li > a:hover { 
         background:$normal-orange;
     }
     .nav > li > a:focus {
-        background:none;
         background:$normal-orange;
     }
     
@@ -517,4 +526,12 @@ now override the 3.3 new styles for modern browsers & apply opacity
 .modal-body {
     color:black;
     font-size:16px;
+    padding:30px;
+}
+.modal-header h4 {
+    padding-left:15px;
+}
+.affix {
+    top:150px;
+    z-index: 100;
 }
