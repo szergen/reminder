@@ -154,7 +154,14 @@ footer {
                     margin-left:-27px;
                    
                 }
+                a.activeHover {
+                    color:$normal-orange;
+                }  
+                a:focus {
+                    background:none;
+                }
             }
+            
         }
     }
 .activeHover:before {
@@ -163,6 +170,7 @@ footer {
     padding-left:27px;
     margin-left:-27px;
 }
+
 #nav2 ul li.activeHover a{
                     background:none;
                     color:$normal-orange;
@@ -531,7 +539,9 @@ now override the 3.3 new styles for modern browsers & apply opacity
 .modal-header h4 {
     padding-left:15px;
 }
+//afix 2nd navigation
 .affix {
-    top:150px;
+    top:100px;
     z-index: 100;
+    width:100%;
 }

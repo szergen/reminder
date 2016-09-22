@@ -30,7 +30,7 @@ angular.
                 //mouse Coordinates
                 $( document ).on( "mousemove", function( event ) {
                     if(event.pageX<wwidth/2) {
-                        console.log("activeaza-te ba");
+                        
                         $('#nav2 ul li:first-child a').addClass('activeHover');
                         $('#nav2 ul li:last-child a').removeClass('activeHover');
                     }
@@ -50,8 +50,8 @@ angular.
                 });
                 
                 //test function
-                var clickedMe = function() {
-                    alert("tralala");
+                this.clickedMe = function() {
+                    alert('tralala');
                 }
                 
               
