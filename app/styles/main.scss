@@ -545,3 +545,41 @@ now override the 3.3 new styles for modern browsers & apply opacity
     z-index: 100;
     width:100%;
 }
+
+//responsive conditions
+
+/* Medium Devices, Desktops */
+    @media only screen and (max-width : 768px) {
+        .carousel-caption {
+            left:30px;
+            margin:0 auto;
+            top:60%;
+        }
+}
+
+
+@media only screen and (max-width : 480px) {
+        .carousel-caption {
+            left:30px;
+            margin:0 auto;
+            top:40%;
+            h1 {
+                font-size: 3.5em;
+            }
+            p {
+                font-size: 20px;
+            }
+        }
+}
+@media only screen and (max-width : 768px) and (orientation:landscape)  {
+        .carousel-caption {
+            top:10%;
+            left:30px;
+            h1{
+                font-size:3.5em;
+            }
+            p{
+                font-size: 20px;
+            }
+        }
+}
