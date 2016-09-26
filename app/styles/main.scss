@@ -74,7 +74,7 @@ li {
 }
 
 //Main Styles
-body{ 
+body{
     background:$normal-blue;
     color:white;
     font-family: $font-text;
@@ -91,12 +91,12 @@ button {
 .img-circle {
     max-width: 170px;
     border-radius: 50%;
-   
+
 }
 textarea {
     resize:none;
-    height:200px; 
-    min-height:200px;  
+    height:200px;
+    min-height:200px;
     max-height:200px;
 }
 .date-contact p {
@@ -111,7 +111,7 @@ textarea {
 }
 //Basic Styles
 h3 {
-    font-size: 35px; 
+    font-size: 35px;
     line-height: 40px;
     padding-bottom: 80px;
 }
@@ -152,16 +152,16 @@ footer {
                     color:$normal-orange;
                     border:0;
                     margin-left:-27px;
-                   
+
                 }
                 a.activeHover {
                     color:$normal-orange;
-                }  
+                }
                 a:focus {
                     background:none;
                 }
             }
-            
+
         }
     }
 .activeHover:before {
@@ -181,14 +181,14 @@ footer {
     border: none;
 }
 //left and right text for 3 columns sections
-.left-text, .right-text {
+.left-text, .right-text,  {
     padding:100px 60px 30px;
     p {
         max-height: 450px;
         margin-bottom:30px;
         overflow: hidden;
     }
-    
+
 }
 .right-text {
     text-align: right;
@@ -204,6 +204,9 @@ footer {
 .left-mid-text, .right-mid-text {
     padding: 100px 30px 30px;
     p {
+        max-height: 460px;
+        overflow: hidden;
+        margin-bottom: 30px;
         padding-bottom:30px;
     }
 }
@@ -268,8 +271,8 @@ h2 {
         a:hover {
             color:$normal-orange;
              text-decoration: none;
-        } 
-    } 
+        }
+    }
 }
 .navbar-brand > img {
     display: inline-block;
@@ -305,10 +308,10 @@ h2 {
         color:white;
         text-align: center;
         padding: 20px 0 0;
-        
+
         .testimonial-title {
             padding:0 20px 20px;
-            
+
             h4{
                 font-size:24px;
                 color: white;
@@ -324,7 +327,7 @@ h2 {
 //contact
 #contact {
     background-color:$dark-blue;
-    padding-bottom:100px; 
+    padding-bottom:100px;
     h2{
         background-color: $dark-blue;
     }
@@ -333,15 +336,15 @@ h2 {
         padding:0 0 30px;
         color: white;
     }
-    
+
 }
-@media (max-width: 767px) { 
+@media (max-width: 767px) {
     .contact-form-right {
         padding-top:30px;
     }
 }
 
-//footer 
+//footer
 footer.end {
     padding:50px 30px;
 }
@@ -369,7 +372,7 @@ footer.end {
 }
 .btn-warning:hover {
     background:none;
-    border-color:white; 
+    border-color:white;
     box-shadow: 0px 0px 5px black;
 }
 .btn-warning:active {
@@ -473,23 +476,23 @@ now override the 3.3 new styles for modern browsers & apply opacity
         line-height: 10px;
          display: inline;
     }
-    
-    .nav > li > a:hover { 
+
+    .nav > li > a:hover {
         background:$normal-orange;
     }
     .nav > li > a:focus {
         background:$normal-orange;
     }
-    
-    
+
+
     .nav > li:hover span.nameSection {
         visibility: visible;
     }
-    
-    
+
+
     li.active a{
         text-align: center;
-        background:$normal-orange; 
+        background:$normal-orange;
     }
 }
 //background Images
@@ -555,6 +558,17 @@ now override the 3.3 new styles for modern browsers & apply opacity
             margin:0 auto;
             top:60%;
         }
+        h3{
+          padding-bottom:50px;
+        }
+        .mid-image, .left-image, .right-image {
+          height: 760px;
+        }
+        .left-text, .right-text, .left-mid-text, .right-mid-text {
+          padding-left:120px;
+          padding-right: 120px;
+          padding-bottom: 100px;
+        }
 }
 
 
@@ -570,6 +584,26 @@ now override the 3.3 new styles for modern browsers & apply opacity
                 font-size: 20px;
             }
         }
+        .mid-image, .left-image, .right-image {
+          height: 500px;
+        }
+        h3{
+          padding-bottom:50px;
+        }
+        .right-text, .left-text, .right-mid-text, .left-mid-text {
+          padding:50px 30px;
+        }
+        .right-text, .right-mid-text {
+          padding-bottom:80px;
+        }
+        .right-mid-text {
+          order:1;
+        }
+        #corporate h3{
+          padding-top:30px;
+        }
+
+
 }
 @media only screen and (max-width : 768px) and (orientation:landscape)  {
         .carousel-caption {
@@ -582,4 +616,10 @@ now override the 3.3 new styles for modern browsers & apply opacity
                 font-size: 20px;
             }
         }
+
+}
+@media only screen and (max-width:1024px) and (orientation:landscape){
+    .left-mid-text, .right-mid-text {
+      padding-bottom: 100px;
+    }
 }
