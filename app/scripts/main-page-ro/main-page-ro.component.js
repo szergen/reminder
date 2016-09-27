@@ -8,7 +8,7 @@ angular.
                 self.test = "traklalalalala";
                 var wheight = $(window).height()-100;
                 var wwidth = $(window).width();
-                
+
         $('.fullHeight').css('height', wheight);
         console.log("slider ba");
 
@@ -19,7 +19,7 @@ angular.
                 $(this).remove();
                 console.log("a mers");
             });
-              
+
         $(window).resize(function(){
                 wheight = $(window).height();
                 $('.fullHeight').css('height', wheight);
@@ -28,9 +28,9 @@ angular.
           interval: 5000
         });
                 //mouse Coordinates
-                $( document ).on( "mousemove", function( event ) {
+                $("body section:not('#testimonials')").on( "mousemove", function( event ) {
                     if(event.pageX<wwidth/2) {
-                        
+
                         $('#nav2 ul li:first-child a').addClass('activeHover');
                         $('#nav2 ul li:last-child a').removeClass('activeHover');
                     }
@@ -38,8 +38,14 @@ angular.
                         $('#nav2 ul li:last-child a').addClass('activeHover');
                         $('#nav2 ul li:first-child a').removeClass('activeHover');
                     }
+
                 });
-                //affix activation 
+
+                $("body section#testimonials").on( "mousemove", function( event ) {
+                    $('#nav2 ul li:last-child a').removeClass('activeHover');
+                });
+
+                //affix activation
                 $('#nav2').affix({
                   offset: {
                     top: wheight+50,
@@ -48,17 +54,17 @@ angular.
                     }
                   }
                 });
-                
+
                 //test function
                 this.clickedMe = function() {
                     alert('tralala');
                 }
-                
-              
-                /*   
+
+
+                /*
                 $http.get('phones/phones.json').then(function(response) {
                     self.phones = response.data;
-                }); 
+                });
                 */
             }]
 });
