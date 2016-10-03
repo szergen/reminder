@@ -54,7 +54,13 @@ angular.
                     }
                   }
                 });
-
+                //set active language
+                $('.nav-lang a:first-child').addClass('active');
+                $('.nav-lang a:last-child').removeClass('active');
+                $('li span.nameSection').each(function() {
+                  if(this.innerHTML=='About Us') this.innerHTML = 'Despre noi';
+                  if(this.innerHTML=='Testimonials') this.innerHTML = 'Testimoniale';
+                });
                 //test function
                 this.clickedMe = function() {
                     alert('tralala');

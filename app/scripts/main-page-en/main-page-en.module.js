@@ -1,1 +1,1 @@
-angular.module('mainPageEn',[]);
+angular.module('mainPageEn',['smoothScroll']);
