@@ -261,15 +261,15 @@
         <div class="row">
             <div class="col-sm-5 col-xs-12">
                 <h4>Formular de contact:</h4>
-                <form ng-submit="$ctrl.clickedMe()">
+                <form name="contactForm" ng-submit="$ctrl.clickedMe(params)">
                     <div class="form-group">
-                        <input type="text" name="firstName" class="form-control" placeholder="Nume" required>
+                        <input type="text" ng-model="params.firstName" name="firstName" class="form-control" placeholder="Nume" required>
                     </div>
                     <div class="form-group">
-                        <input type="email" name="emailAddress" class="form-control" placeholder="E-mail" required>
+                        <input type="email" ng-model="params.emailAddress" name="emailAddress" class="form-control" placeholder="E-mail" required>
                     </div>
                     <div class="form-group">
-                        <textarea class="form-control" id="text" placeholder="Introduceti textul"></textarea>
+                        <textarea class="form-control" ng-model="params.emailText" name="emailText" id="text" placeholder="Introduceti textul"></textarea>
                     </div>
                      <button type="submit" class="btn btn-default">Trimite</button>
                 </form>
@@ -314,6 +314,10 @@
 <footer class="end">
     <p>© Lorem ipsum dolor sit amet, consectetur adipisicing elit </p>
 </footer>
+
+<!-- ................ modals................ -->
+<!-- ................................ -->
+<!-- ................................ -->
 
 <!-- modal despre tine -->
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
@@ -537,8 +541,44 @@
 
             Și va fi un timp încărcat cu pasiune, imaginație și responsabilitate.
 
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
 
+      </div>
+    </div>
+  </div>
+</div>
 
+<!-- modal Email true -->
+<div class="modal fade" id="myModalMail" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content ">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">E-mail notification</h4>
+      </div>
+      <div class="modal-body">
+        Your e-mail has been sent succesfully
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- modal Email false -->
+<div class="modal fade" id="myModalMailError" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content ">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">E-mail notification</h4>
+      </div>
+      <div class="modal-body">
+        Your e-mail has not been sent. Please verify your connection and try again.
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>

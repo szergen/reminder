@@ -628,4 +628,10 @@ now override the 3.3 new styles for modern browsers & apply opacity
     }
 }
 
-//carousel animation
+//modal fix
+.modal-open {
+    overflow: visible;
+}
+.modal-open, .modal-open .navbar-fixed-top, .modal-open .navbar-fixed-bottom {
+    padding-right:0px!important;
+}

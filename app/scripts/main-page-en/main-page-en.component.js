@@ -49,7 +49,7 @@ angular.
                 //affix activation
                 $('#nav2').affix({
                   offset: {
-                    top: wheight+50,
+                    top: wheight+650,
                     bottom: function () {
                       return (this.bottom = $('.footer').outerHeight(true))
                     }

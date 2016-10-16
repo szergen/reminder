@@ -25,7 +25,8 @@ angular.
                 $('.fullHeight').css('height', wheight);
             });
         $('.carousel').carousel({
-          interval: 5000
+          interval: 4000,
+          pause: "false"
         });
                 //mouse Coordinates
                 $("body section:not('#testimonials')").on( "mousemove", function( event ) {
@@ -48,7 +49,7 @@ angular.
                 //affix activation
                 $('#nav2').affix({
                   offset: {
-                    top: wheight+50,
+                    top: wheight+650,
                     bottom: function () {
                       return (this.bottom = $('.footer').outerHeight(true))
                     }
@@ -62,15 +63,17 @@ angular.
                   if(this.innerHTML=='Testimonials') this.innerHTML = 'Testimoniale';
                 });
                 //test function
-                this.clickedMe = function() {
-                    alert('tralala');
+                this.clickedMe = function(params) {
+                    console.log(params);
+                    $http.post('http://re-minder.ro/scripts/action.php', params).success(function (data) {
+
+                          $('#myModalMail').modal('show');
+
+                    }).error(function (data) {
+                        $('#myModalMailError').modal('show');
+                    });
+
                 }
 
-
-                /*
-                $http.get('phones/phones.json').then(function(response) {
-                    self.phones = response.data;
-                });
-                */
             }]
 });
