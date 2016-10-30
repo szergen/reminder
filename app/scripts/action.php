@@ -8,9 +8,9 @@ if(isset($_POST['emailAddress'])) {
 
 // EDIT THE 2 LINES BELOW AS REQUIRED
 
-$email_to = "szergen@gmail.com";
+$email_to = "elena@re-minder.ro, szergen@gmail.com";
 
-$email_subject = "Action testing";
+$email_subject = "E-mail from re-minder";
 
 
 

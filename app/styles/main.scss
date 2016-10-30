@@ -91,6 +91,7 @@ button {
 }
 .img-circle {
     max-width: 170px;
+    max-height:170px;
     border-radius: 50%;
 
 }
@@ -308,6 +309,9 @@ h2 {
     box-shadow: 0px 0px 5px black;
     margin-bottom: 45px;
     padding: 20px 0 0;
+    max-height: 500px;
+    overflow: hidden;
+    transition: max-height 0.5s;
     .caption {
         color:white;
         text-align: center;
@@ -324,9 +328,11 @@ h2 {
         .testimonial-text {
             background-color:$dark-blue;
             padding:20px;
+            cursor: pointer;
         }
     }
 }
+
 
 //contact
 #contact {

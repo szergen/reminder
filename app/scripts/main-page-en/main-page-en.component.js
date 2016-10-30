@@ -3,7 +3,7 @@ angular.
     module('mainPageEn').
         component('mainPageEn', {
             templateUrl: 'scripts/main-page-en/main-page-en.template.html',
-            controller: ['$http', function mainPageRoController($http) {
+            controller: ['$http', function mainPageEnController($http) {
 
                 var self = this;
                 self.test = "traklalalalala";
@@ -26,7 +26,8 @@ angular.
                 $('.fullHeight').css('height', wheight);
             });
         $('.carousel').carousel({
-          interval: 5000
+          interval: 4000,
+          pause: "false"
         });
                 //mouse Coordinates
                 $("body section:not('#testimonials')").on( "mousemove", function( event ) {
@@ -42,7 +43,7 @@ angular.
 
                 });
 
-                $("body section#testimonials").on( "mousemove", function( event ) {
+                $("body section#testimonials").on( "mousemove", function() {
                     $('#nav2 ul li:last-child a').removeClass('activeHover');
                 });
 
@@ -59,7 +60,7 @@ angular.
                 //test function
                 this.clickedMe = function() {
                     alert('tralala');
-                }
+                };
                 //language selection
                 $('.nav-lang a:first-child').removeClass('active');
                 $('.nav-lang a:last-child').addClass('active');
@@ -67,12 +68,33 @@ angular.
                   if(this.innerHTML=='Despre noi') this.innerHTML = 'About Us';
                   if(this.innerHTML=='Testimoniale') this.innerHTML = 'Testimonials';
                 });
+              //email form
+              this.clickedMe = function(params) {
+                console.log(params);
+                $http.post('http://re-minder.ro/scripts/action.php', params).success(function () {
 
+                  $('#myModalMail').modal('show');
 
-                /*
-                $http.get('phones/phones.json').then(function(response) {
-                    self.phones = response.data;
+                }).error(function () {
+                  $('#myModalMailError').modal('show');
                 });
-                */
+
+              };
+
+              //expand Testimonials
+              $('.thumbnail').on('click', function () {
+                console.log(this);
+                if(this.style.maxHeight != '1000px') {
+                  this.style.maxHeight = '1000px';
+                } else {
+                  this.style.maxHeight = '500px';
+                }
+
+              }).on('mouseleave', function() {
+                if(this.style.maxHeight == '1000px') {
+                  this.style.maxHeight = '500px';
+                }
+              });
+
             }]
 });

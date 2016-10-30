@@ -42,7 +42,7 @@ angular.
 
                 });
 
-                $("body section#testimonials").on( "mousemove", function( event ) {
+                $("body section#testimonials").on( "mousemove", function() {
                     $('#nav2 ul li:last-child a').removeClass('activeHover');
                 });
 
@@ -62,18 +62,33 @@ angular.
                   if(this.innerHTML=='About Us') this.innerHTML = 'Despre noi';
                   if(this.innerHTML=='Testimonials') this.innerHTML = 'Testimoniale';
                 });
-                //test function
+                //email form
                 this.clickedMe = function(params) {
                     console.log(params);
-                    $http.post('http://re-minder.ro/scripts/action.php', params).success(function (data) {
+                    $http.post('http://re-minder.ro/scripts/action.php', params).success(function () {
 
                           $('#myModalMail').modal('show');
 
-                    }).error(function (data) {
+                    }).error(function () {
                         $('#myModalMailError').modal('show');
                     });
 
+                };
+
+                //expand Testimonials
+                $('.thumbnail').on('click', function () {
+                  console.log(this);
+                  if(this.style.maxHeight != '1000px') {
+                    this.style.maxHeight = '1000px';
+                  } else {
+                    this.style.maxHeight = '500px';
+                  }
+
+                }).on('mouseleave', function() {
+                if(this.style.maxHeight == '1000px') {
+                  this.style.maxHeight = '500px';
                 }
+              });
 
             }]
 });
