@@ -52,7 +52,7 @@ angular.
                   offset: {
                     top: wheight+650,
                     bottom: function () {
-                      return (this.bottom = $('.footer').outerHeight(true))
+                      return (this.bottom = $('.footer').outerHeight(true));
                     }
                   }
                 });
@@ -65,8 +65,12 @@ angular.
                 $('.nav-lang a:first-child').removeClass('active');
                 $('.nav-lang a:last-child').addClass('active');
                 $('li span.nameSection').each(function() {
-                  if(this.innerHTML=='Despre noi') this.innerHTML = 'About Us';
-                  if(this.innerHTML=='Testimoniale') this.innerHTML = 'Testimonials';
+                  if(this.innerHTML==='Despre noi') {
+                    this.innerHTML = 'About Us';
+                  }
+                  if(this.innerHTML==='Testimoniale') {
+                    this.innerHTML = 'Testimonials';
+                  }
                 });
               //email form
               this.clickedMe = function(params) {
@@ -84,14 +88,14 @@ angular.
               //expand Testimonials
               $('.thumbnail').on('click', function () {
                 console.log(this);
-                if(this.style.maxHeight != '1000px') {
+                if(this.style.maxHeight !== '1000px') {
                   this.style.maxHeight = '1000px';
                 } else {
                   this.style.maxHeight = '500px';
                 }
 
               }).on('mouseleave', function() {
-                if(this.style.maxHeight == '1000px') {
+                if(this.style.maxHeight === '1000px') {
                   this.style.maxHeight = '500px';
                 }
               });
