@@ -7,9 +7,9 @@
 //Variable Definitions
 $font-text: 'Open Sans', sans-serif;
 $font-headings: 'Oswald', sans-serif;
-$light-blue: #2c4364;
-$normal-blue: #162336;
-$dark-blue: #0b121c;
+$light-blue: #335a82;
+$normal-blue: #1f4460;
+$dark-blue: #162c40;
 $normal-orange: #dea76d;
 
 //Baseline Styles
@@ -128,6 +128,11 @@ footer {
   display: flex;
   flex-wrap: wrap;
 }
+//main nav
+//section#one2one {
+//  border-top:50px solid $dark-blue;
+//}
+
 //2nd navigation
 #nav2 {
     background: $light-blue;
@@ -140,8 +145,8 @@ footer {
                 float:none;
                 display: inline-block;
                 a {
-                    line-height: 50px;
-                    font-size: 20px;
+                    line-height: 30px;
+                    font-size: 16px;
                     text-transform: uppercase;
                     color:white;
                     font-family: $font-text;
@@ -223,6 +228,10 @@ footer {
     position:relative;
 }
 //Section Headings
+section#one2one div.cat-title {
+  padding-top:-10px;
+}
+
 .cat-title {
     text-align: center;
     width:370px;
@@ -393,6 +402,9 @@ footer.end {
 }
 
 //carousel
+#myCarousel ol.carousel-indicators {
+  bottom:80px;
+}
 #myCarousel .item {
     background-size: cover;
     background-repeat: no-repeat;
@@ -454,10 +466,10 @@ now override the 3.3 new styles for modern browsers & apply opacity
     height: 100%;
 }
 .carousel-caption {
-    text-align: left;
+    text-align: center;
     top:40%;
     h1 {
-        margin-bottom:30px;
+        margin-bottom:10px;
     }
     p{
         font-size:1.75em;
