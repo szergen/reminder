@@ -128,6 +128,9 @@ footer {
   display: flex;
   flex-wrap: wrap;
 }
+.text-center {
+  padding-bottom:60px;
+}
 //main nav
 //section#one2one {
 //  border-top:50px solid $dark-blue;
@@ -200,6 +203,12 @@ footer {
 .right-text {
     text-align: right;
     background:$dark-blue;
+
+  span.align-left {
+    display: block;
+    text-align: left;
+  }
+
 }
 .mid-image {
     background:$light-blue;
@@ -223,7 +232,12 @@ footer {
 .right-mid-text {
     background:$normal-blue;
     text-align: right;
+  span.align-left {
+    display: block;
+    text-align: left;
+  }
 }
+
 .container-fluid {
     position:relative;
 }
