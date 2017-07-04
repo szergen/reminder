@@ -192,10 +192,10 @@ footer {
     border: none;
 }
 //left and right text for 3 columns sections
-.left-text, .right-text,  {
+.left-text, .right-text  {
     padding:50px 60px 30px;
     p {
-        max-height: 450px;
+        max-height: 360px;
         margin-bottom:30px;
         overflow: hidden;
     }
@@ -204,6 +204,7 @@ footer {
 .right-text {
     //text-align: right;
     background:$dark-blue;
+    text-align: center;
 
   span.align-left {
     display: block;
@@ -215,22 +216,30 @@ footer {
     background:$light-blue;
 }
 .left-text {
+  text-align: center;
     background:$normal-blue;
 }
 //left and right text for 4 columns sections
 .left-mid-text, .right-mid-text {
-    padding: 100px 30px 30px;
+    padding: 100px 30px 70px 30px;
     p {
-        max-height: 460px;
+        max-height: 360px;
         overflow: hidden;
         margin-bottom: 30px;
         padding-bottom:30px;
+        text-align: center;
     }
 }
 .left-mid-text {
     background:$light-blue;
+  text-align: center;
+    span.align-left {
+    display: block;
+    text-align: left;
+  }
 }
 .right-mid-text {
+  text-align: center;
     background:$normal-blue;
     //text-align: right;
   span.align-left {
@@ -333,7 +342,7 @@ h2 {
     box-shadow: 0px 0px 5px black;
     margin-bottom: 45px;
     padding: 20px 0 0;
-    max-height: 500px;
+    max-height: 463px;
     overflow: hidden;
     transition: max-height 0.5s;
     .caption {
@@ -369,6 +378,7 @@ h2 {
         font-size: 24px;
         padding:0 0 30px;
         color: white;
+      text-align: center;
     }
 
 }

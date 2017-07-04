@@ -85,12 +85,12 @@ angular.
                   if(this.style.maxHeight !== '1000px') {
                     this.style.maxHeight = '1000px';
                   } else {
-                    this.style.maxHeight = '500px';
+                    this.style.maxHeight = '463px';
                   }
 
                 }).on('mouseleave', function() {
                 if(this.style.maxHeight === '1000px') {
-                  this.style.maxHeight = '500px';
+                  this.style.maxHeight = '463px';
                 }
               });
 
