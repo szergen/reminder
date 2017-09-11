@@ -6,7 +6,7 @@ angular.
             controller: ['$http', function mainPageRoController($http) {
                 var self = this;
                 self.test = "traklalalalala";
-                var wheight = $(window).height()-130;
+                var wheight = $(window).height()-100;
                 var wwidth = $(window).width();
 
         $('.fullHeight').css('height', wheight);

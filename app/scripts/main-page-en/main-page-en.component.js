@@ -29,28 +29,28 @@ angular.
           interval: 4000,
           pause: "false"
         });
-                //mouse Coordinates
-                $("body section:not('#testimonials')").on( "mousemove", function( event ) {
-                    if(event.pageX<wwidth/2) {
-
-                        $('#nav2 ul li:first-child a').addClass('activeHover');
-                        $('#nav2 ul li:last-child a').removeClass('activeHover');
-                    }
-                    else {
-                        $('#nav2 ul li:last-child a').addClass('activeHover');
-                        $('#nav2 ul li:first-child a').removeClass('activeHover');
-                    }
-
-                });
-
-                $("body section#testimonials").on( "mousemove", function() {
-                    $('#nav2 ul li:last-child a').removeClass('activeHover');
-                });
+                // //mouse Coordinates
+                // $("body section:not('#testimonials')").on( "mousemove", function( event ) {
+                //     if(event.pageX<wwidth/2) {
+                //
+                //         $('#nav2 ul li:first-child a').addClass('activeHover');
+                //         $('#nav2 ul li:last-child a').removeClass('activeHover');
+                //     }
+                //     else {
+                //         $('#nav2 ul li:last-child a').addClass('activeHover');
+                //         $('#nav2 ul li:first-child a').removeClass('activeHover');
+                //     }
+                //
+                // });
+                //
+                // $("body section#testimonials").on( "mousemove", function() {
+                //     $('#nav2 ul li:last-child a').removeClass('activeHover');
+                // });
 
                 //affix activation
                 $('#nav2').affix({
                   offset: {
-                    top: wheight+650,
+                    top: 0,
                     bottom: function () {
                       return (this.bottom = $('.footer').outerHeight(true));
                     }
@@ -91,12 +91,12 @@ angular.
                 if(this.style.maxHeight !== '1000px') {
                   this.style.maxHeight = '1000px';
                 } else {
-                  this.style.maxHeight = '500px';
+                  this.style.maxHeight = '463px';
                 }
 
               }).on('mouseleave', function() {
                 if(this.style.maxHeight === '1000px') {
-                  this.style.maxHeight = '500px';
+                  this.style.maxHeight = '463px';
                 }
               });
 

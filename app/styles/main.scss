@@ -195,7 +195,7 @@ footer {
 .left-text, .right-text  {
     padding:50px 60px 30px;
     p {
-        max-height: 360px;
+        max-height: 340px;
         margin-bottom:30px;
         overflow: hidden;
     }
@@ -369,6 +369,7 @@ h2 {
 
 //contact
 #contact {
+
     background-color:$dark-blue;
     padding-bottom:100px;
     h2{
@@ -378,7 +379,7 @@ h2 {
         font-size: 24px;
         padding:0 0 30px;
         color: white;
-      text-align: center;
+        text-align: center;
     }
 
 }
@@ -600,8 +601,11 @@ now override the 3.3 new styles for modern browsers & apply opacity
 
 /* Medium Devices, Desktops */
     @media only screen and (max-width : 768px) {
+      .carousel-indicators {
+        display: none;
+      }
         .carousel-caption {
-            left:30px;
+
             margin:0 auto;
             top:60%;
         }
@@ -620,17 +624,24 @@ now override the 3.3 new styles for modern browsers & apply opacity
 
 
 @media only screen and (max-width : 480px) {
+
         .carousel-caption {
-            left:30px;
+
             margin:0 auto;
-            top:40%;
+            top:30%;
             h1 {
                 font-size: 3.5em;
             }
             p {
-                font-size: 20px;
+                font-size: 18px;
             }
+          button {
+            margin-top: 50px;
+          }
         }
+  .carousel-indicators {
+    display: none;
+  }
         .mid-image, .left-image, .right-image {
           height: 500px;
         }
@@ -650,12 +661,40 @@ now override the 3.3 new styles for modern browsers & apply opacity
           padding-top:30px;
         }
 
+  .date-contact p {
+    font-size: 20px;
+  }
+
 
 }
+
+@media only screen and (max-width : 320px) {
+  .date-contact p {
+    font-size: 16px;
+  }
+  .cat-title {
+    width: 100%;
+  }
+  .col-xs-3 {
+   width: auto;
+  }
+  .carousel-caption {
+    top:10%;
+
+    h1{
+      font-size:3.5em;
+    }
+    p{
+      font-size: 20px;
+    }
+  }
+
+}
+
 @media only screen and (max-width : 768px) and (orientation:landscape)  {
         .carousel-caption {
             top:10%;
-            left:30px;
+
             h1{
                 font-size:3.5em;
             }
@@ -663,13 +702,41 @@ now override the 3.3 new styles for modern browsers & apply opacity
                 font-size: 20px;
             }
         }
+  .carousel-indicators {
+    display: none;
+  }
 
 }
 @media only screen and (max-width:1024px) and (orientation:landscape){
+  .carousel-caption {
+    top:50%;
+  }
+.carousel-indicators {
+  display: none;
+}
     .left-mid-text, .right-mid-text {
       padding-bottom: 100px;
     }
 }
+
+@media only screen and (max-width : 768px)  {
+  section#corporate {
+    h3 {
+      padding-top:30px;
+    }
+  }
+
+  .left-text, .right-text  {
+
+    p {
+      max-height: 330px;
+
+    }
+
+  }
+  }
+
+
 
 //modal fix
 .modal-open {
