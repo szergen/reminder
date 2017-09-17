@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0e464ca8-b210-483f-9e6f-3a3cff4b50c9" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/main.scss" afterPath="$PROJECT_DIR$/app/styles/main.scss" />
     </list>
     <ignored path="re-minder.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -540,8 +540,8 @@
           <file leaf-file-name="main-page-ro.template.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/app/scripts/main-page-ro/main-page-ro.template.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-154">
-                  <caret line="17" column="17" lean-forward="true" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
+                <state relative-caret-position="462">
+                  <caret line="43" column="98" lean-forward="true" selection-start-line="43" selection-start-column="98" selection-end-line="43" selection-end-column="98" />
                   <folding>
                     <element signature="e#6615#6621#0" expanded="true" />
                     <element signature="e#6622#6628#0" expanded="true" />
@@ -828,8 +828,8 @@
           <file leaf-file-name="main.scss" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/app/styles/main.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="264">
-                  <caret line="708" column="1" lean-forward="false" selection-start-line="708" selection-start-column="1" selection-end-line="708" selection-end-column="1" />
+                <state relative-caret-position="438">
+                  <caret line="130" column="1" lean-forward="true" selection-start-line="130" selection-start-column="1" selection-end-line="130" selection-end-column="1" />
                   <folding />
                 </state>
               </provider>
@@ -901,8 +901,8 @@
         <option value="$PROJECT_DIR$/app/scripts/main-page-ro/main-page-ro.component.js" />
         <option value="$PROJECT_DIR$/app/scripts/main-page-en/main-page-en.template.html" />
         <option value="$PROJECT_DIR$/app/index.html" />
-        <option value="$PROJECT_DIR$/app/styles/main.scss" />
         <option value="$PROJECT_DIR$/app/scripts/main-page-ro/main-page-ro.template.html" />
+        <option value="$PROJECT_DIR$/app/styles/main.scss" />
       </list>
     </option>
   </component>
@@ -1113,12 +1113,12 @@
       <workItem from="1503577852117" duration="10469000" />
       <workItem from="1504689962300" duration="7337000" />
       <workItem from="1505107959841" duration="1152000" />
-      <workItem from="1505652246551" duration="607000" />
+      <workItem from="1505652246551" duration="1325000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="69426000" />
+    <option name="totallyTimeSpent" value="70144000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1433,14 +1433,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/styles/main.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="708" column="1" lean-forward="false" selection-start-line="708" selection-start-column="1" selection-end-line="708" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1254">
@@ -1582,8 +1574,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/scripts/main-page-ro/main-page-ro.template.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-154">
-          <caret line="17" column="17" lean-forward="true" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
+        <state relative-caret-position="462">
+          <caret line="43" column="98" lean-forward="true" selection-start-line="43" selection-start-column="98" selection-end-line="43" selection-end-column="98" />
           <folding>
             <element signature="e#6615#6621#0" expanded="true" />
             <element signature="e#6622#6628#0" expanded="true" />
@@ -1714,6 +1706,14 @@
             <element signature="e#35463#35469#0" expanded="true" />
             <element signature="e#35470#35476#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/styles/main.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="438">
+          <caret line="130" column="1" lean-forward="true" selection-start-line="130" selection-start-column="1" selection-end-line="130" selection-end-column="1" />
+          <folding />
         </state>
       </provider>
     </entry>
